@@ -3,7 +3,7 @@
 console.log('Rybenchuk');
 
 let firstPlace = 'Ivan';
-const secondPlace = 'Yukhym'
+const secondPlace = 'Yukhym';
 
 alert(` ${firstPlace} \n ${secondPlace}`);
 
@@ -16,8 +16,7 @@ const winer = {
     Number: 1,
     Boolean: true,
     Undefined: undefined,
-    Null: null
-
+    Null: null,
 }
 
 const isAdult = confirm('Are you already 18 years old?');
