@@ -18,7 +18,7 @@
 // console.log(res1); 
 // console.log(typeof res1);
 
-// let res2 = x ? true + String(y) : false ;
+// let res2 = x ? true + String(y) : false;
 // console.log(res2); 
 // console.log(typeof res2); 
 
@@ -32,16 +32,38 @@
 
 
 // // 3
-// const isAdult = prompt("How Old are you?") 
+// const isAdult = prompt("How Old are you?");
 
 // isAdult >= 18 ? alert("Fine, you are adult!") : alert("Sorry, you are to young!");
 
 
-// 4
+// // 4
+// let arr = [4, 5, 2, 1, 6, 5, 3, 5, 2, 5];
+// let data = [];
+// let maxCount = 0;
+// let maxFreq = 0;
+
+// for (let i = 0; i <= arr.length; i++) {
+//     let count = 0;
+//     for (let j = 0; j<= arr.length; j++) {
+//         if (arr[i] === arr[j]) {
+//             count++;
+//         }
+//     }
+//     if (count > maxCount) {
+//         maxCount = count;
+//         maxFreq = arr[i];
+//     }
+// }
+
+// arr = arr.filter(element => element !== maxFreq);
+// data.push(maxFreq);
+
+// console.log(arr);
+// console.log(data);
 
 
-
-// 5
+// // 5
 // const a = parseFloat(prompt("Type the length of first side of triangle"));
 // const b = parseFloat(prompt("Type the length of second side of triangle"));
 // const c = parseFloat(prompt("Type the length of third side of triangle"));
@@ -56,14 +78,14 @@
 //     const halfPerimeter = 0.5 * (a + b + c);
 //     const area = Math.sqrt(halfPerimeter * (halfPerimeter - a) * (halfPerimeter - b) * (halfPerimeter - c));
 
-//     alert("Area of your triangle is: " + area.toFixed(3))
+//     alert("Area of your triangle is: " + area.toFixed(3));
 // } else {
 //     console.log("Incorrect data. The triangle with that sides is impossible");
 //     alert("Incorrect data. The triangle with that sides is impossible");
 // }
 
 
-//6
+// //6
 // const a = parseFloat(prompt("Type the first number"));
 // const b = parseFloat(prompt("Type the second number"));
 // const op = parseFloat(prompt("Choose an operator:\n1. subtraction\n2. multiplication\n3. division\nother number - addition"));
@@ -83,4 +105,17 @@
 // culc(a, b, op);
 
 
-// 7
+// // 7
+// function findUnique(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[i] === arr[j]) {
+//                 return console.log(false);
+//             }
+//         }
+//     }
+//     return console.log(true);
+// }
+
+// findUnique([1, 2, 3, 5, 3]); //false
+// findUnique([1, 2, 3, 5, 11]); //true
