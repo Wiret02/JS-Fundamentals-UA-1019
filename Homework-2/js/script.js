@@ -90,7 +90,7 @@
 // const b = parseFloat(prompt("Type the second number"));
 // const op = parseFloat(prompt("Choose an operator:\n1. subtraction\n2. multiplication\n3. division\nother number - addition"));
 
-// function culc(a, b, op) {
+// function calc(a, b, op) {
 //     if (op === 1) {
 //         alert(a - b);
 //     } else if (op === 2) {
@@ -102,7 +102,7 @@
 //     }
 // };
 
-// culc(a, b, op);
+// calc(a, b, op);
 
 
 // // 7
