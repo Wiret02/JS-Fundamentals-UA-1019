@@ -1,4 +1,4 @@
-// // Homework №2 //
+// // Homework №3 //
 
 
 // // 1
@@ -37,7 +37,7 @@
 // function printNumbers(a, b) {
 //     for (let i = a; i <= b; i++) {
 //         for (let j = 1; j <= i - a + 1; j++) {
-//         console.log(i);
+//             console.log(i);
 //         }
 //     }
 // }
