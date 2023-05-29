@@ -91,27 +91,27 @@
 
 
 // // 5
-function showUser(id) {
-    if (id < 0) {
-        throw new Error("ID must not be negative: " + id);
-    }
+// function showUser(id) {
+//     if (id < 0) {
+//         throw new Error("ID must not be negative: " + id);
+//     }
 
-    const idObj = {};
-    idObj.id = id;
-    return idObj;
-}
+//     const idObj = {};
+//     idObj.id = id;
+//     return idObj;
+// }
 
-function showUsers(ids) {
-    const idsArr = [];
-    for (let i = 0; i < ids.length; i++) {
-        try {
-            let id = showUser(ids[i]);
-            idsArr.push(id);
-        } catch (error) {
-            console.log(error.message);
-        }
-    }
-    return idsArr;
-}
+// function showUsers(ids) {
+//     const idsArr = [];
+//     for (let i = 0; i < ids.length; i++) {
+//         try {
+//             let id = showUser(ids[i]);
+//             idsArr.push(id);
+//         } catch (error) {
+//             console.log(error.message);
+//         }
+//     }
+//     return idsArr;
+// }
 
-console.log(showUsers([7, -12, 44, 22]));
+// console.log(showUsers([7, -12, 44, 22]));
