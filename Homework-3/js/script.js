@@ -4,6 +4,7 @@
 // // 1
 // const arr = [5, 3, 4, 5, 6, 7, 3];
 
+//bad practice:
 // function compact(arr) {
 //     let array;
 //     for (let i = 0; i < arr.length; i++) {
@@ -15,6 +16,11 @@
 //         }
 //     }
 //     return arr;
+// }
+
+// good Practice:
+// function compact(arr) {
+//     return Array.from(new Set(arr));
 // }
 
 // const arr2 = compact(arr);
