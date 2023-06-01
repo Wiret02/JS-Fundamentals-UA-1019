@@ -161,71 +161,71 @@
 
 
 // // 5
-class Worker {
-    constructor(fullName, dayRate, workingDays) {
-        this.fullName = fullName;
-        this.dayRate = dayRate;
-        this.workingDays = workingDays;
-    }
+// class Worker {
+//     constructor(fullName, dayRate, workingDays) {
+//         this.fullName = fullName;
+//         this.dayRate = dayRate;
+//         this.workingDays = workingDays;
+//     }
 
-    showSalary() {
-        return this.dayRate * this.workingDays;
-    }
+//     showSalary() {
+//         return this.dayRate * this.workingDays;
+//     }
 
-    #experience = 1.2;
+//     #experience = 1.2;
 
-    get experience() {
-        return this.#experience;
-    }
+//     get experience() {
+//         return this.#experience;
+//     }
 
-    set experience(value) {
-        if (value < 1) {
-            value = 1;
-        }
-        this.#experience = value;
-    }
+//     set experience(value) {
+//         if (value < 1) {
+//             value = 1;
+//         }
+//         this.#experience = value;
+//     }
 
-    showSalaryWithexperience() {
-        return this.showSalary() * this.#experience;
-    }
-}
+//     showSalaryWithexperience() {
+//         return this.showSalary() * this.#experience;
+//     }
+// }
 
-const worker1 = new Worker("John Jonson", 20, 23);
+// const worker1 = new Worker("John Jonson", 20, 23);
 
-console.log(worker1.fullName);
-console.log(`${worker1.fullName} salary: ${worker1.showSalary()}`);
-console.log(`New experience: ${worker1.experience}`);
-console.log(`${worker1.fullName} salary: ${worker1.showSalaryWithexperience()}`);
-worker1.experience = 1.5;
-console.log(`New experience: ${worker1.experience}`);
-console.log(`${worker1.fullName} salary: ${worker1.showSalaryWithexperience()}`);
+// console.log(worker1.fullName);
+// console.log(`${worker1.fullName} salary: ${worker1.showSalary()}`);
+// console.log(`New experience: ${worker1.experience}`);
+// console.log(`${worker1.fullName} salary: ${worker1.showSalaryWithexperience()}`);
+// worker1.experience = 1.5;
+// console.log(`New experience: ${worker1.experience}`);
+// console.log(`${worker1.fullName} salary: ${worker1.showSalaryWithexperience()}`);
 
-const worker2 = new Worker("Tom Tomson", 48, 22);
+// const worker2 = new Worker("Tom Tomson", 48, 22);
 
-console.log('\n' + worker2.fullName);
-console.log(`${worker2.fullName} salary: ${worker2.showSalary()}`);
-worker2.experience = 1.5;
-console.log(`New experience: ${worker2.experience}`);
-console.log(`${worker2.fullName} salary: ${worker2.showSalaryWithexperience()}`);
+// console.log('\n' + worker2.fullName);
+// console.log(`${worker2.fullName} salary: ${worker2.showSalary()}`);
+// worker2.experience = 1.5;
+// console.log(`New experience: ${worker2.experience}`);
+// console.log(`${worker2.fullName} salary: ${worker2.showSalaryWithexperience()}`);
 
-const worker3 = new Worker("Andy Ander", 29, 23);
+// const worker3 = new Worker("Andy Ander", 29, 23);
 
-console.log('\n' + worker3.fullName);
-console.log(`${worker3.fullName} salary: ${worker3.showSalary()}`);
-worker3.experience = 1.5;
-console.log(`New experience: ${worker3.experience}`);
-console.log(`${worker3.fullName} salary: ${worker3.showSalaryWithexperience()}`);
+// console.log('\n' + worker3.fullName);
+// console.log(`${worker3.fullName} salary: ${worker3.showSalary()}`);
+// worker3.experience = 1.5;
+// console.log(`New experience: ${worker3.experience}`);
+// console.log(`${worker3.fullName} salary: ${worker3.showSalaryWithexperience()}`);
 
-const workers = [];
+// const workers = [];
 
-workers.push(worker1);
-workers.push(worker2);
-workers.push(worker3);
+// workers.push(worker1);
+// workers.push(worker2);
+// workers.push(worker3);
 
-workers.sort((a, b) => a.showSalaryWithexperience() - b.showSalaryWithexperience());
+// workers.sort((a, b) => a.showSalaryWithexperience() - b.showSalaryWithexperience());
 
-console.log('\n' + "Sorted salary:");
+// console.log('\n' + "Sorted salary:");
 
-for (const worker of workers) {
-    console.log(`${worker.fullName} salary: ${worker.showSalaryWithexperience()}`);
-}
+// for (const worker of workers) {
+//     console.log(`${worker.fullName} salary: ${worker.showSalaryWithexperience()}`);
+// }
