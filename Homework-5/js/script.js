@@ -200,7 +200,7 @@ worker1.experience = 1.5;
 console.log(`New experience: ${worker1.experience}`);
 console.log(`${worker1.fullName} salary: ${worker1.showSalaryWithexperience()}`);
 
-const worker2 = new Worker("Tom Tomson", 48, 22)
+const worker2 = new Worker("Tom Tomson", 48, 22);
 
 console.log('\n' + worker2.fullName);
 console.log(`${worker2.fullName} salary: ${worker2.showSalary()}`);
@@ -208,7 +208,7 @@ worker2.experience = 1.5;
 console.log(`New experience: ${worker2.experience}`);
 console.log(`${worker2.fullName} salary: ${worker2.showSalaryWithexperience()}`);
 
-const worker3 = new Worker("Andy Ander", 29, 23)
+const worker3 = new Worker("Andy Ander", 29, 23);
 
 console.log('\n' + worker3.fullName);
 console.log(`${worker3.fullName} salary: ${worker3.showSalary()}`);
@@ -222,7 +222,7 @@ workers.push(worker1);
 workers.push(worker2);
 workers.push(worker3);
 
-workers.sort((a, b) => a.showSalaryWithexperience() - b.showSalaryWithexperience())
+workers.sort((a, b) => a.showSalaryWithexperience() - b.showSalaryWithexperience());
 
 console.log('\n' + "Sorted salary:");
 
