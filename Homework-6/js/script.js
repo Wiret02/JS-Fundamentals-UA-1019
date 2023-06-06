@@ -38,38 +38,71 @@
 
 
 // // 4
-function getValues() {
-    const inputFio = document.querySelector('input[name="fio"]');
-    const inputPhone = document.querySelector('input[name="phone"]');
-    const inputBirthday = document.querySelector('input[name="birthday"]');
-    const inputEmail = document.querySelector('input[name="email"]');
+// function getValues() {
+//     const inputFio = document.querySelector('input[name="fio"]');
+//     const inputPhone = document.querySelector('input[name="phone"]');
+//     const inputBirthday = document.querySelector('input[name="birthday"]');
+//     const inputEmail = document.querySelector('input[name="email"]');
 
-    const fio = inputFio.value;
-    const phone = inputPhone.value;
-    const birthday = inputBirthday.value;
-    const email = inputEmail.value;
+//     const fio = inputFio.value;
+//     const phone = inputPhone.value;
+//     const birthday = inputBirthday.value;
+//     const email = inputEmail.value;
 
-    return {fio, phone, birthday, email};
-}
+//     return {fio, phone, birthday, email};
+// }
 
-function OutBox(values) {
-    const outBox = document.querySelector('.out');
+// function OutBox(values) {
+//     const outBox = document.querySelector('.out');
 
-    outBox.innerHTML = `
-    <div class="inner__wrapper">
-        <p>ПІБ: ${values.fio}</p>
-        <p>Номер телефону: ${values.phone}</p>
-        <p>Дата народження: ${values.birthday}</p>
-        <p>Електронна пошта: ${values.email}</p>
-    </div>
-    `;
-}
+//     outBox.innerHTML = `
+//     <div class="inner__wrapper">
+//         <p>ПІБ: ${values.fio}</p>
+//         <p>Номер телефону: ${values.phone}</p>
+//         <p>Дата народження: ${values.birthday}</p>
+//         <p>Електронна пошта: ${values.email}</p>
+//     </div>
+//     `;
+// }
 
-function ShowInfoInOutBox() {
-    const values = getValues();
-    OutBox(values);
-}
+// function ShowInfoInOutBox() {
+//     const values = getValues();
+//     OutBox(values);
+// }
 
-const button = document.querySelector('.btn');
+// const button = document.querySelector('.btn');
 
-button.addEventListener('click', ShowInfoInOutBox);
+// button.addEventListener('click', ShowInfoInOutBox);
+
+
+// // 5
+// const circles = document.querySelectorAll('.circle');
+
+// for (let i = 0; i < circles.length; i++) {
+//     const dataValue = circles[i].dataset.anim;
+//     circles[i].classList.add(dataValue);
+// }
+
+// // 6
+const price = document.querySelector('#outprice');
+const shoesColors = document.querySelectorAll('.color');
+const shoesImages = document.querySelectorAll('.shoe');
+const shoeBackgrounds = document.querySelectorAll('.gradient');
+
+for (let i = 0; i < shoesColors.length; i++) {
+    shoesColors[i].addEventListener('click', function () {
+
+        for (let j = 0; j < shoesColors.length; j++) {
+            shoesColors[j].classList.remove('active');
+            shoesImages[j].classList.remove('show');
+            shoeBackgrounds[j].classList.remove('second');
+        }
+
+        const dataValue = shoesColors[i].dataset.price;
+        price.innerHTML = dataValue;
+        shoesColors[i].classList.toggle('active');
+        shoesImages[i].classList.toggle('show');
+        shoeBackgrounds[i].classList.toggle('second');
+
+    });
+} 
