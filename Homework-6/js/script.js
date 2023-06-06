@@ -84,25 +84,25 @@
 // }
 
 // // 6
-const price = document.querySelector('#outprice');
-const shoesColors = document.querySelectorAll('.color');
-const shoesImages = document.querySelectorAll('.shoe');
-const shoeBackgrounds = document.querySelectorAll('.gradient');
+// const price = document.querySelector('#outprice');
+// const shoesColors = document.querySelectorAll('.color');
+// const shoesImages = document.querySelectorAll('.shoe');
+// const shoeBackgrounds = document.querySelectorAll('.gradient');
 
-for (let i = 0; i < shoesColors.length; i++) {
-    shoesColors[i].addEventListener('click', function () {
+// for (let i = 0; i < shoesColors.length; i++) {
+//     shoesColors[i].addEventListener('click', function () {
 
-        for (let j = 0; j < shoesColors.length; j++) {
-            shoesColors[j].classList.remove('active');
-            shoesImages[j].classList.remove('show');
-            shoeBackgrounds[j].classList.remove('second');
-        }
+//         for (let j = 0; j < shoesColors.length; j++) {
+//             shoesColors[j].classList.remove('active');
+//             shoesImages[j].classList.remove('show');
+//             shoeBackgrounds[j].classList.remove('second');
+//         }
 
-        const dataValue = shoesColors[i].dataset.price;
-        price.innerHTML = dataValue;
-        shoesColors[i].classList.toggle('active');
-        shoesImages[i].classList.toggle('show');
-        shoeBackgrounds[i].classList.toggle('second');
+//         const dataValue = shoesColors[i].dataset.price;
+//         price.innerHTML = dataValue;
+//         shoesColors[i].classList.toggle('active');
+//         shoesImages[i].classList.toggle('show');
+//         shoeBackgrounds[i].classList.toggle('second');
 
-    });
-} 
+//     });
+// } 
