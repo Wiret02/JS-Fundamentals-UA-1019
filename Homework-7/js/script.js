@@ -4,15 +4,15 @@
 // // 1
 // const newWindow = window.open('', '', 'width=300, height=300');
 
-// setTimeout(function(){
+// setTimeout(function () {
 //     newWindow.resizeTo(500, 500);
 // }, 2000);
 
-// setTimeout(function(){
+// setTimeout(function () {
 //     newWindow.moveTo(200, 200);
 // }, 4000);
 
-// setTimeout(function(){
+// setTimeout(function () {
 //     newWindow.close();
 // }, 6000);
 
@@ -35,27 +35,27 @@
 // const thirdBtn = document.querySelector('#thirdBtn');
 // const link = document.querySelector('#link');
 
-// firstBtn.addEventListener('click', function(){
+// firstBtn.addEventListener('click', function () {
 //     document.body.style.backgroundColor = 'blue';
 // });
 
-// secondtBtn.addEventListener('dblclick', function(){
+// secondtBtn.addEventListener('dblclick', function () {
 //     document.body.style.backgroundColor = 'pink';
 // });
 
-// thirdBtn.addEventListener('mousedown', function(){
+// thirdBtn.addEventListener('mousedown', function () {
 //     document.body.style.backgroundColor = 'brown';
 // });
 
-// thirdBtn.addEventListener('mouseup', function(){
+// thirdBtn.addEventListener('mouseup', function () {
 //     document.body.style.backgroundColor = 'white';
 // });
 
-// link.addEventListener('mouseover', function(){
+// link.addEventListener('mouseover', function () {
 //     document.body.style.backgroundColor = 'yellow';
 // });
 
-// link.addEventListener('mouseout', function(){
+// link.addEventListener('mouseout', function () {
 //     document.body.style.backgroundColor = 'white';
 // });
 
@@ -64,7 +64,7 @@
 // const select = document.querySelector('#select');
 // const removeBtn = document.querySelector('#btn');
 
-// removeBtn.addEventListener('click', function() {
+// removeBtn.addEventListener('click', function () {
 //     const selectedOption = select.options[select.selectedIndex];
 //     select.removeChild(selectedOption);
 // });
@@ -72,24 +72,24 @@
 
 // // 5
 // const btn = document.querySelector('#btn');
-// const  messages = document.querySelector('.messages');
+// const messages = document.querySelector('.messages');
 
 // const mouseover = '<p>Mouse on me!</p> <br>';
 
-// btn.addEventListener('mouseover', function(){
-//    const message = document.createElement('p');
-//    message.textContent = 'Mouse on me!';
-//    messages.appendChild(message);
+// btn.addEventListener('mouseover', function () {
+//     const message = document.createElement('p');
+//     message.textContent = 'Mouse on me!';
+//     messages.appendChild(message);
 // });
 
-// btn.addEventListener('mouseout', function(){
+// btn.addEventListener('mouseout', function () {
 //     const message = document.createElement('p');
 //     message.textContent = 'Mouse is not on me!';
 //     messages.appendChild(message);
-//  });
+// });
 
-//  btn.addEventListener('click', function(){
+// btn.addEventListener('click', function () {
 //     const message = document.createElement('p');
 //     message.textContent = 'I was pressed!';
 //     messages.appendChild(message);
-//  });
+// });
