@@ -16,6 +16,59 @@
 //     newWindow.close();
 // }, 6000);
 
+// // upgradet versions with promises and async/await
+
+// function resizeToPromise() {
+//     return new Promise((resolve, reject) => {
+//       setTimeout(() => {
+//         console.log("resizeTo");
+//         newWindow.resizeTo(500, 500);
+//         resolve();
+//       }, Math.random() * 2000);
+//     });
+//   }
+  
+//   function moveToPromise(x, y) {
+//     return new Promise((resolve, reject) => {
+//       setTimeout(() => {
+//         console.log("moveTo");
+//         newWindow.moveTo(x, y);
+//         resolve();
+//       }, Math.random() * 2000);
+//     });
+//   }
+  
+//   function closePromise() {
+//     return new Promise((resolve, reject) => {
+//       setTimeout(() => {
+//         console.log("close");
+//         newWindow.close();
+//         resolve();
+//       }, Math.random() * 2000);
+//     });
+//   }
+  
+  // resizeToPromise()
+  //   .then(() => {
+  //     return moveToPromise(200,200);
+  //   })
+  //   .then(() => {
+  //     return closePromise();
+  //   })
+  //   .then(() => {
+  //     console.log("End");
+  //   })
+  
+//   async function start() {
+//     await resizeToPromise();
+//     await moveToPromise(200, 200);
+//     await moveToPromise(400, 600);
+//     await closePromise();
+//     console.log("End Async Await");
+//   }
+//   start();
+//   console.log('End programm');
+
 
 // // 2
 // const text = document.querySelector('#text');
