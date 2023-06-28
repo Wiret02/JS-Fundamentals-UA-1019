@@ -1,5 +1,6 @@
-const btnEl = document.querySelector('#btn');
 const appEl = document.querySelector('#app');
+const btnEl = document.querySelector('#btn');
+const btnRemoveAll = document.querySelector('#btn-remove');
 
 getNotes().forEach((note) => {
     const noteEl = createNoteEl(note.id, note.content);
@@ -33,6 +34,14 @@ function deleteNote(id, element) {
     appEl.removeChild(element);
 }
 
+function deleteAllNotes() {
+    let notes = getNotes();
+    let elements = document.querySelectorAll('.note');
+    notes = [];
+    saveNote(notes);
+    elements.forEach(element => appEl.removeChild(element));
+}
+
 function updateNote(id, content) {
     const notes = getNotes();
     const target = notes.filter((note) => note.id == id)[0];
@@ -64,3 +73,11 @@ function getNotes() {
 }
 
 btnEl.addEventListener('click', addNote);
+
+btnRemoveAll.addEventListener('click', () => {
+    const warning = confirm('Do you want to delete all notes?')
+
+    if (warning === true) {
+        deleteAllNotes();
+    }
+})
